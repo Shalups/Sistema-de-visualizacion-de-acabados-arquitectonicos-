@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.app.colorwallar.WallColorOverlayView
+        android:id="@+id/colorOverlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#CC000000"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Toca la pared para pintar"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Fila 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <FrameLayout android:id="@+id/colorBtn1"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#5B9BD5"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn2"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#7FB77E"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn3"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#C8704A"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn4"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#F7C948"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn5"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#E87DA3"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Fila 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <FrameLayout android:id="@+id/colorBtn6"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#A26DC2"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn7"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#4EBFB0"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn8"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#FFFFFF"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtn9"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <View android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#555555"/>
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/colorBtnClear"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_margin="5dp">
+                <TextView android:layout_width="40dp" android:layout_height="40dp"
+                    android:layout_gravity="center" android:gravity="center"
+                    android:text="✕" android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/color_circle"
+                    android:backgroundTint="#333333"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Opacidad"
+            android:textColor="#BBBBBB"
+            android:textSize="12sp"/>
+
+        <SeekBar
+            android:id="@+id/seekOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="55"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tolerancia de color"
+            android:textColor="#BBBBBB"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekTolerance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="43"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvActiveColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● Azul Cielo"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:background="#99000000"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
